@@ -11,15 +11,17 @@
         <canvas id="game"></canvas>
 
         <div class="btns">
-            <button class="up">Arriba</button>
-            <button class="left">Izquierda</button>
-            <button class="right">Derecha</button>
-            <button class="down">Abajo</button>
+            <button id="up">Arriba</button>
+            <button id="left">Izquierda</button>
+            <button id="right">Derecha</button>
+            <button id="down">Abajo</button>
         </div>
 
         <div class="messages">
-            <!-- Pendiente -->
-            <p>Párrafo de ejemplo</p>
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo: <span id="time"></span></p>
+            <p>Record: <span id="record"></span></p>
+            <p id="result"></p>
         </div>
         <script src="./maps.js"></script>
         <script src="./game.js"></script>
