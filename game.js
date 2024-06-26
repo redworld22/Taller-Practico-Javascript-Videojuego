@@ -98,12 +98,16 @@ function setCanvasSize(){
         canvasSize = window.innerHeight * 0.7;
     }
 
+    canvasSize = Number(canvasSize.toFixed(2));
+
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
 
     elementSize = canvasSize / 10;
     console.log(canvasSize, elementSize);
 
+    playerPosition.x = undefined;
+    playerPosition.y = undefined;
     startGame();
     movePlayer();
 }
